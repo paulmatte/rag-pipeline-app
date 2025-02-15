@@ -1,5 +1,46 @@
-.env/
+# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs and cache
+*.log
+*.out
+cache/
+*.cache/
+
+# Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Ignore environment variables and secrets
+.env
+*.env
+
+# Ignore FAISS database files
 faiss_db/
+
+# Ignore data directories (if they contain temporary or large files)
 data/
-src/__pycache__/
+
+# Ignore compiled Cython files
+*.so
+*.pyd
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Streamlit and Hugging Face cache
+~/.streamlit/
+huggingface_hub/
+
+# Ignore Git metadata backups
+*.swp
+*.swo
